@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Food ordering website</title>
+ <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+  <!-- sidebar -->
+  <div class="sidebar">
+    <!-- LOGO -->
+    <h1 class="logo">FoodTime</h1>
+
+    <!-- list of menus -->
+    <div class="sidebar-menus">
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/263/263115.png" height="20px">Home</a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1611/1611154.png" height="20px">Bills</a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3885/3885840.png" height="20px">wallet</a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3602/3602145.png" height="20px">Notification</a>
+       <a href="contact.html"><img src="https://cdn-icons-png.flaticon.com/128/3037/3037825.png" height="20px">Contact Us</a>
+       <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3524/3524636.png" height="20px">Setting</a>
+    </div>
+    <!-- Layout -->
+    <div class="sidebar-logout">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/17191/17191373.png" height="20px">Logout</a>
+    </div>
+  </div>
+
+  <!-- main  -->
+  <div class="main">
+    <!-- main navbar -->
+    <div class="main-navbar">
+      <!-- menu when appear on mobile -->
+      <img class= "menu-toggle" src="https://cdn-icons-png.flaticon.com/128/14267/14267486.png" height="5px">
+      <!-- search bar -->
+      <div class="search">
+        <input type="text" placeholder="What you want to eat?">
+        <button class="search-btn">Search</button>
+      </div>
+      <!-- profile icon on left side of navber -->
+      <div class="profile">
+        <a class="cart" href="cart.html"><img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" height="20px"></a>
+        <a class="user" href="log in.html"><img src="https://cdn-icons-png.flaticon.com/128/456/456283.png" height="20px"></a>
+      </div>
+    </div>
+    <!--main highlights -->
+    <div class="main-highlight">
+      <!-- title section and arrow -->
+      <div class="main-header">
+        <h2 class="main-title">Recommendations</h2>
+        <div class= "main-arrow">
+          <img class="back" src="https://cdn-icons-png.flaticon.com/128/318/318276.png" height="20px">
+          <img class="next" src="https://cdn-icons-png.flaticon.com/128/318/318275.png" height="20px">
+      </div>
+      </div>
+        <!-- highlight menu -->
+        <div class="highlight-wrapper">
+          <div class="highlight-card">
+            <img class="highlight-img" src="https://imgs.search.brave.com/RcTrnJplslo9955D-QopORkyc2OxdJFXBX3eKgKhI3Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODU2/NDIxMzYvcGhvdG8v/c2FsYWQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUFFY0tn/NFQ0UDV4RHBYZy1m/d0RsNzBpb1JDdFhO/dDBLaWhDRmVmby1O/UE09">
+            <div class="highlight-desc">
+              <h4>Fresh Salad</h4>
+              <p> ₹250</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="https://imgs.search.brave.com/fyhr54Jo3wURP8mjDCOh696YSkfYJLybWrBQafSGiIE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTUz/MzI4MzMxL3Bob3Rv/L2Zlc2hseS1icmV3/ZWQtZXNwcmVzc28u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTVyNkZfTmVQVVhF/QWtMVkZMSE91enBz/dVZhbWdrMkRxbklB/QURkVVk3XzQ9">
+            <div class="highlight-desc">
+              <h4>Cafe Latter</h4>
+              <p> ₹200</p>
+            </div> 
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="https://imgs.search.brave.com/3Gt4PKSvDUwzpj-LTA1YWg9HZf2vhqfF-qUQM_4Lo8w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/MTY1NzMxMC9waG90/by9kZWxpY2lvdXMt/c2xpY2VkLXN0ZWFr/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz03LUtKaUZWQW0x/ajJnUVZFcE9malFk/Y3g4cGlCc3IyaUJT/VGZEQWdUUGM4PQ">
+            <div class="highlight-desc">
+              <h4>Premium Steak</h4>
+              <p> ₹150</p>
+            </div> 
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="https://imgs.search.brave.com/6w738znDUamCHRhk7ltYRN6Nj8TR6kI5gn7KNQP65EU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by90YXN0eS1oYW1i/dXJnZXJfMTI4NjY3/LTM4ODkuanBnP3Np/emU9NjI2JmV4dD1q/cGc">
+            <div class="highlight-desc">
+              <h4>Big Burger</h4>
+              <p> ₹150</p>
+            </div> 
+          </div>
+        </div>
+    </div>
+    <!-- main menus / order -->
+    <div class="main-menus">
+      <!-- filter section -->
+      <div class="main-filter">
+        <div>
+          <h2 class="main-title">Menu <br>Category</h2>
+          <div class="main-arrow">
+            <img class="back-menus" src="https://cdn-icons-png.flaticon.com/128/318/318276.png" height="20px">
+            <img class="next-menus" src="https://cdn-icons-png.flaticon.com/128/318/318275.png" height="20px">
+          </div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-card">
+            <div class="filter-icon">
+              <img src="https://cdn-icons-png.flaticon.com/128/1046/1046857.png" height="20px">
+            </div>
+            <p>All Menus</p>
+          </div>
+           <a href="#burger"><div class="filter-card">
+              <div class="filter-icon">
+                <img src="https://cdn-icons-png.flaticon.com/128/5087/5087244.png" height="20px">
+              </div>
+              <p>Burger</p>
+            </div></a>
+             <a href="#pizza"> <div class="filter-card">
+                <div class="filter-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/128/4058/4058619.png" height="20px">
+                </div>
+                <p>Pizza</p>
+        </div></a>
+                <a href="#wine"> <div class="filter-card">
+                  <div class="filter-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/65/65667.png" height="20px">
+                  </div>
+                  <p>Wine</p>
+                </div></a>
+                 <a href="#icecream"> <div class="filter-card">
+                    <div class="filter-icon">
+                      <img src="https://cdn-icons-png.flaticon.com/128/4534/4534108.png" height="20px">
+                    </div>
+                    <p>Ice Cream</p>
+                  </div></a>
+                    <a href="#coffee"><div class="filter-card">
+                      <div class="filter-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/751/751621.png" height="20px">
+                      </div>
+                      <p>Coffee</p>
+                    </div></a>
+                      <a href="#seafood"><div class="filter-card">
+                        <div class="filter-icon">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1037/1037793.png" height="20px">
+                        </div>
+                        <p>Fast Food</p>
+                      </div></a>
+                       <a href="#healthy"> <div class="filter-card">
+                          <div class="filter-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/128/11920/11920266.png" height="20px">
+                          </div>
+                          <p>Healthy</p>
+                        </div></a>
+        </div>
+     </div>
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="Menu">
+         <h2 class="main-title">Choose Order</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/TaYD6AtivtCgjvQrbmnORpdSV0jpi_2m-nHiO78zOVo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdDUu/ZGVwb3NpdHBob3Rv/cy5jb20vMTE3MDA5/MjcvNjc0NTYvaS80/NTAvZGVwb3NpdHBo/b3Rvc182NzQ1NjI2/MjItc3RvY2stcGhv/dG8taG9tZW1hZGUt/dG9tYXRvLWNyZWFt/LXNvdXAtYmFzaWwu/anBn">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Tomato Soup</h4>
+                   <p class="detail-sub">Tomato soup with fresh basil, creamy texture, savory flavor.</p>
+                   <p class="price">₹170</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/T3nSWSUMphg_I0a8bubLTgIidUh4v0a7oYtm4TwRgkI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ib3R0bGUtd2lu/ZS13aXRoLWdyYXBl/cy10b3AtaXRfOTcz/MTgzLTMzMjE3Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Wine</h4>
+                    <p class="detail-sub">Fine wine with rich flavors, aged to perfection, elegant aroma.</p>
+                    <p class="price">₹1500</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/FztkLQsuqWyrRKg_5q5GRL0QREiy1TLyVEwFm_hACRg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNjcz/NTE5MzMvc3RvY2st/cGhvdG8tcGl6emE.jpeg">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Pizza</h4>
+                    <p class="detail-sub">Wood-fired pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                    <p class="price">₹350</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/oKfUvEBHIw8GH99QkX4sejkh4KcyHxvcLqKLLaHnClo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ1/MjUyODkyOS9waG90/by9idXJnZXItc2Fu/ZHdpY2gud2VicD9i/PTEmcz0xNzA2Njdh/Jnc9MCZrPTIwJmM9/VFAzckstZTRuY0to/dGQ3WWxtOWpWcHg3/YVpyd3J0MEl0Z0RN/OTN2dmZnYz0">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Aloo Tikki Burger</h4>
+                     <p class="detail-sub">Juicy burger with cheddar cheese, lettuce, tomato, and pickles.</p>
+                     <p class="price">₹75</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/vL8VqgDJkJs2mXdkVI7sxZvpVzTd5TFWGIxrAtPYfSM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MzM3NzY5OTI2NzAt/YTcyZjRjMjgyMzVl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4T0h4OFky/OW1abVZsSlRJd2JY/Vm5mR1Z1ZkRCOGZE/QjhmSHd3.jpeg">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Cappuccino Coffee</h4>
+                     <p class="detail-sub">Frothy cappuccino with rich espresso, steamed milk, and foam.</p>
+                     <p class="price">₹250</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/e9nNzmoHoxojW2n1gj-uV1_KBwq2Iat4Pisyyjsw0Nc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNDQzMTA1/NS83NDM0L2kvNDUw/L2RlcG9zaXRwaG90/b3NfNzQzNDAyMDMt/c3RvY2stcGhvdG8t/c2FsYWQtZm9vZC10/YWtlYXdheS5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Mix Salad</h4>
+                     <p class="detail-sub">Crisp salad with mixed greens, cherry tomatoes, cucumbers, and vinaigrette.</p>
+                     <p class="price">₹120</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+    
+    <!-- next section 1 -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      
+      <!-- List of food menus -->
+       <div class="main-detail" id="burger">
+         <h2 class="main-title">Burgers</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/3prCExZCGHPhdLgMdfwgTvNqPreb9cHmdSFiUfpN2Xw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmljZXBuZy5jb20v/cG5nL2RldGFpbC8y/NjktMjY5MjY4M19q/dWljeS1idXJnZXIt/YWxvby10aWtraS1i/dXJnZXIucG5n">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Allo Tikki Burger</h4>
+                   <p class="detail-sub">Juicy Burger - Aloo Tikki Burger, transparent png download</p>
+                   <p class="price">₹40</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/c-bSdPHW9r1TjbRlw2BYaBkGSiGQeHpL5xpbHShRSXI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/aWctc2FuZHdpY2gt/aGFtYnVyZ2VyLXdp/dGgtanVpY3ktYmVl/Zi1idXJnZXItY2hl/ZXNlLXRvbWF0by1y/ZWQtb25pb24td29v/ZGVuLXRhYmxlXzI4/MjktMTk2MzEuanBn/P3NpemU9NjI2JmV4/dD1qcGc">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Beef Burger</h4>
+                    <p class="detail-sub"> Hamburger with juicy beef burger, cheese, tomato and Crispy Fries</p>
+                    <p class="price">₹200</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/9Ns-0uYy7oC52PPxgFzbTA6e1EXLhc1RC_nw0lNL6Ho/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMTUx/NDE5ODY0L3N0b2Nr/LXBob3RvLWZyZXNo/bHktY29va2VkLW1l/YXQtYnVyZ2Vy">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Meat Burger</h4>
+                    <p class="detail-sub">Freshly cooked meat burger</p>
+                    <p class="price">₹60</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/oKfUvEBHIw8GH99QkX4sejkh4KcyHxvcLqKLLaHnClo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ1/MjUyODkyOS9waG90/by9idXJnZXItc2Fu/ZHdpY2gud2VicD9i/PTEmcz0xNzA2Njdh/Jnc9MCZrPTIwJmM9/VFAzckstZTRuY0to/dGQ3WWxtOWpWcHg3/YVpyd3J0MEl0Z0RN/OTN2dmZnYz0">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Aloo Double Tikki Burger</h4>
+                     <p class="detail-sub">Juicy burger with cheddar cheese, lettuce, tomato, and pickles.</p>
+                     <p class="price">₹75</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/vL8VqgDJkJs2mXdkVI7sxZvpVzTd5TFWGIxrAtPYfSM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MzM3NzY5OTI2NzAt/YTcyZjRjMjgyMzVl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4T0h4OFky/OW1abVZsSlRJd2JY/Vm5mR1Z1ZkRCOGZE/QjhmSHd3.jpeg">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Cheese Burger</h4>
+                     <p class="detail-sub">Cheese Burger With Crispy aloo Tikki.</p>
+                     <p class="price">₹55</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/LRsOFEjW7N-QB6bDPoPGxs5pGqH9guyvGbgOvflSioo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NTg4MDE3Ny9waG90/by9idXJnZXItY29t/Ym8td2l0aC10YWtl/LWF3YXktYmV2ZXJh/Z2UtZ2xhc3Mtc3Ry/YXduLWFuZC1kaXNw/b3NhYmxlLWZyZW5j/aC1mcmllcy1pbi1r/cmFmdC1wYXBlci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/a2hUMnBfWWp5ODd5/djh5Nm42aW85d3I5/emNqRFNwcUJycXA5/Wjh1RlJNMD0">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Burger Combo Pack</h4>
+                     <p class="detail-sub">Burger combo with Take away beverage glass strawn and disposable french fries.</p>
+                     <p class="price">₹220</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+      <!-- next section -->
+      <div class="main-menus">
+
+      <hr class="divider">
+        <!-- List of food menus -->
+         <div class="main-detail" id="pizza">
+           <h2 class="main-title">Pizza</h2>
+           <div class="detail-wrapper">
+             <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/Exll1DZ7Fy6Ea4wnNAtL1x2MKvrsIphyfPnhAl4csqs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAyLzUwLzg1/LzM2MF9GXzgwMjUw/ODU4N180aVVXZmJM/Q2VTWVFDbWZ2WWR1/cm82Y1RkbTdZWTRx/RC5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Tomato Pizza</h4>
+                     <p class="detail-sub">A savory pizza topped with ripe tomatoes, fresh basil, mozzarella cheese, and a drizzle of olive oil.</p>
+                     <p class="price">₹99</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+             <div class="detail-card">
+                <img class="detail-img" src="https://imgs.search.brave.com/4ynUMXCEQFDFON5Man8e92IxXGdvPuefYQ1v_s078nE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDQzODIzNTQ5MzYt/MDdjNWQ5OTgzYmQz/P2ZtPWpwZyZ3PTMw/MDAmYXV0bz1mb3Jt/YXQmZml0PWNyb3Am/cT02MCZpeGxpYj1y/Yi00LjAuMyZpeGlk/PU0zd3hNakEzZkRC/OE1IeGxlSEJzYjNK/bExXWmxaV1I4Tm54/OGZHVnVmREI4Zkh4/OGZBPT0">
+                <div class="detail-desc">
+                   <div class="detail-name">
+                      <h4>Pizza</h4>
+                      <p class="detail-sub">pizza with cheese and green leaf</p>
+                      <p class="price">₹160</p>
+                    </div>
+                    <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+                </div>
+             </div>
+             <div class="detail-card">
+                <img class="detail-img" src="https://imgs.search.brave.com/FztkLQsuqWyrRKg_5q5GRL0QREiy1TLyVEwFm_hACRg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNjcz/NTE5MzMvc3RvY2st/cGhvdG8tcGl6emE.jpeg">
+                <div class="detail-desc">
+                   <div class="detail-name">
+                      <h4>Pizza</h4>
+                      <p class="detail-sub">Wood-fired pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                      <p class="price">₹350</p>
+                    </div>
+                    <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+                </div>
+             </div>
+             <div class="detail-card">
+                 <img class="detail-img" src="https://media.gettyimages.com/id/1227424804/photo/pizza-with-onions-and-tuna.jpg?s=612x612&w=0&k=20&c=UqOhReKHImaewU7rcVdI1LS7Jgbh43r0C9W7ofHlMw8=">
+                 <div class="detail-desc">
+                    <div class="detail-name">
+                       <h4>Onion Pizza</h4>
+                       <p class="detail-sub">A flavorful pizza topped with caramelized onions, mozzarella cheese, and a hint of thyme.</p>
+                       <p class="price">₹175</p>
+                     </div>
+                     <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+                 </div>
+              </div>
+             <div class="detail-card">
+                 <img class="detail-img" src="https://media.gettyimages.com/id/1284882062/photo/carbonara-pizza.jpg?s=612x612&w=0&k=20&c=Ga9W2efuWbP0WsCA-jcI2FPDbJHF1cMN0bKJUfsAbMc=">
+                 <div class="detail-desc">
+                    <div class="detail-name">
+                       <h4>Carbonara pizza</h4>
+                       <p class="detail-sub">A rich pizza featuring creamy carbonara sauce, crispy pancetta, mozzarella, and a sprinkle of black pepper.</p>
+                       <p class="price">₹200</p>
+                     </div>
+                     <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+                 </div>
+              </div>
+             <div class="detail-card">
+                 <img class="detail-img" src="https://media.gettyimages.com/id/175448097/photo/chicken-bbq-pizza.jpg?s=612x612&w=0&k=20&c=fi7glLABJtMX0oJ03Ot8dU3aeYtCu0XBTfg8A66mrxU=">
+                 <div class="detail-desc">
+                    <div class="detail-name">
+                       <h4>Chicken Pizza</h4>
+                       <p class="detail-sub">A delicious pizza loaded with tender chicken, melted mozzarella, and a tangy tomato sauce.</p>
+                       <p class="price">₹250</p>
+                     </div>
+                     <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+                 </div>
+              </div>
+           </div>
+         </div>             
+      </div>
+    <!-- next section -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="wine">
+         <h2 class="main-title">Wine</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/2GFBppyeYty6u6HvzkkJLkfwM3Qj40czC0FmMKsmbCA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG9ycmVzLmVzL3Np/dGVzL2RlZmF1bHQv/ZmlsZXMvbWlncmF0/ZS9PeHR1cHdRZ2xS/TUdOaE9pV3Jhemx6/dXpCTVMtUGppZTh0/aUZNSmdoNE1zLmpw/ZWc">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Familia Torres </h4>
+                   <p class="detail-sub">Familia Torres Costers del Segre Winery Winery</p>
+                   <p class="price">₹2000</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/T3nSWSUMphg_I0a8bubLTgIidUh4v0a7oYtm4TwRgkI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ib3R0bGUtd2lu/ZS13aXRoLWdyYXBl/cy10b3AtaXRfOTcz/MTgzLTMzMjE3Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Wine</h4>
+                    <p class="detail-sub">Fine wine with rich flavors, aged to perfection, elegant aroma.</p>
+                    <p class="price">₹1500</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/EGNloEAH3Kkv6wpB9sfhRFi4u6CV90YN119T2dAMAqs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9taW51/bWFuLmNvbS9jZG4v/c2hvcC9maWxlcy9U/RU1QTEFURVBST0Qt/SU1HXzc4XzYwMHgu/anBnP3Y9MTcxNDYz/MTM5OA">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Penfolds Wine</h4>
+                    <p class="detail-sub">Penfolds Bin 8 Shiraz Cabernet 2020</p>
+                    <p class="price">₹3400</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/aUF6kaJs0QF_vKhpD3UBbDOIkR4gwUfXC7crEphSDrI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWdlZGNvcmsuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA5L0NWTkUtQ3Vu/ZS1SaW9qYS1SZXNl/cnZhLmpwZw">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Cune CVNE Entrance Winery </h4>
+                     <p class="detail-sub">Spanish winery, historic Rioja wines, elegant flavors.</p>
+                     <p class="price">₹1750</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/35AW1lJIaDvsQcHHwxiGUx8xTzj2GQPxrmUb49JviiM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aGVuc2Noa2UuY29t/LmF1L2Nkbi9zaG9w/L2ZpbGVzL0Jhcm9z/c2FfTGVnYWN5X0Nv/bGxlY3Rpb25faG9t/ZXBhZ2VfaW1hZ2Vf/MTExMHg3NDlweC5q/cGc_dj0xNzE5ODEx/MDM1JndpZHRoPTM4/NDA">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Henschke Winery</h4>
+                     <p class="detail-sub">Australian wines, rich history, exceptional Shiraz, and Riesling.</p>
+                     <p class="price">₹2500</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/MBwweMMdX8_d7B3xfByjUs-BZZnjD0LeiHkQpetlN6Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9rZXlh/c3NldHMudGltZWlu/Y3VrLm5ldC9pbnNw/aXJld3AvbGl2ZS93/cC1jb250ZW50L3Vw/bG9hZHMvc2l0ZXMv/MzQvMjAxNy8wNS9W/ZWdhLVNpY2lsaWEt/VW5pY28tMTk2NC5q/cGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Vega Sicilia Wine </h4>
+                     <p class="detail-sub">Prestigious Spanish winery, renowned for exceptional Tempranillo blends.</p>
+                     <p class="price">₹2200</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+    <!-- next section -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="icecream">
+         <h2 class="main-title">Ice Cream</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/c7uz0w5qwxxZomrOwh2yHX0Nft_4p2Nx-6D86UPkH88/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGFzdGluZ3RhYmxl/LmNvbS9pbWcvZ2Fs/bGVyeS90aGUtbW9z/dC1wb3B1bGFyLWJs/dWUtYmVsbC1pY2Ut/Y3JlYW0tZmxhdm9y/cy1yYW5rZWQvaW50/cm8tMTY0ODQyNTU5/My5qcGc">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Blue Bells Ice Cream</h4>
+                   <p class="detail-sub">Blue Bell A&W® Root Beer Float Ice Cream in half gallon.</p>
+                   <p class="price">₹170</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/s4E9KEAeD-TIRIMO1Xt91TnY0OoThy0cGy9NIVCOWis/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzA5LzA1Lzg0/LzM2MF9GXzUwOTA1/ODQxOV96Y21tMVFZ/TGZ6d0lNUGhJQ0Zi/NlhSWEpSZ1JTYWdL/ai5qcGc">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Magnum icecream</h4>
+                    <p class="detail-sub">Magnum classic milk chocolate coated Madagascan vanilla ice cream on a wooden stick.</p>
+                    <p class="price">₹90</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/MrUk7PMULrocvXXjdj0u3eqTFodY8sW1Vcd8mV-PyDE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NDI0OTI2L3Bob3Rv/L2Nob2NvbGF0ZS1p/Y2UtY3JlYW0tYmFs/bHMtY2xpcHBpbmct/cGF0aC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9S3FPcjlH/N3Y3ZUxWZ0o4cEdT/TDVTZGxybVRjenB1/S1lhdmJTaGI1TDl4/VT0">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Chocolate Icecream</h4>
+                    <p class="detail-sub">Chocolate ice cream: creamy, rich, and deeply flavored with pure cocoa..</p>
+                    <p class="price">₹350</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/QTXdAemtbltzqN3IMWQOmEbtEGHkpVp27SpuAgcyMXQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFjMmZVemZJZEwu/anBn">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Butter Scotch Ice Cream</h4>
+                     <p class="detail-sub">Amul Ice Cream - Butterscotch, 750ml Pack (Pack of 2).</p>
+                     <p class="price">₹175</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/IFZDAzz3IkfXEF17aWuSJQb3LSRtad5gKlTq1WPdAzc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2VudHJhbG1haW5l/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMi8yMDE4/LzA1Lzg1MjE1N19h/Y2FkaWFjdXQuanBn/P3c9MTAyNA">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Gifford's Ice Cream </h4>
+                     <p class="detail-sub">Premium ice cream known for rich flavors and creamy texture..</p>
+                     <p class="price">₹250</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/z9FmM2svwIA0rN16dDog6PHIJivAUh2n3BFO4CVDEdE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/MDY2NjAxMi9waG90/by9pY2UtY3JlYW0u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWV5T1BmYXVZVzMz/YU1PTERKa0MteUlC/UGU0YnctdUpDWVY0/Xy1NRDRMRlk9">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Vanilla ice cream</h4>
+                     <p class="detail-sub"> Classic, creamy, and smooth with a subtle vanilla essence.</p>
+                     <p class="price">₹120</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+    <!-- next section -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="coffee">
+         <h2 class="main-title">Coffee</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/OObJUUXUFx6N4VOLNL4_g2oDJlK_iU-9S04jaAU_7eY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMwMjcw/NjUuanBn">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Black Coffee</h4>
+                   <p class="detail-sub">Bold, robust, and pure with no added flavors.</p>
+                   <p class="price">₹59</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/mJG8LFwFD1yMFxFQYuKDJyTvl1guaO1umFDzKhyQn7o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hc3NvcnRlZC1p/Y2VkLWNvZmZlZS13/aGl0ZS1jb25jcmV0/ZS1iYWNrZ3JvdW5k/LW1pbmltYWwtY29t/cG9zaXRpb24td2l0/aC1jb2xkLXN1bW1l/ci1kcmlua3NfMTU4/MDAxLTY0MjIuanBn/P3NpemU9NjI2JmV4/dD1qcGc">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Cold Coffee</h4>
+                    <p class="detail-sub">Chilled, refreshing, and smooth with a rich coffee flavor.</p>
+                    <p class="price">₹90</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/Om92K-SpTRSBmxQVBEHD6yEZxuKGEJxVdCWeJ-qVTmA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODMy/ODUxNDcvcGhvdG8v/Y3JlbWEtZXNwcmVz/c28uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWt1R0lxcWhx/WTZwV2JIVHdNSGRz/X1JUTHNLbF9WbXB4/UExsdHB4ZS1XM0U9">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>crema espresso </h4>
+                    <p class="detail-sub"> Smooth, rich espresso topped with a golden, velvety crema.</p>
+                    <p class="price">₹150</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/w6-2-GH__LpIOLjJwLHCEqRN8VAMOzeMTYRgcMGr4QI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg0/NjQ2OTY4L3Bob3Rv/L2N1cC1vZi10ZWEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PU5rQlVGNVZfV1V2/MlBXalVKMXRVWXZ3/MkthUGxORENIQS1l/cTRwemNfUE09">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Cup of tea</h4>
+                     <p class="detail-sub">Aromatic, soothing, and infused with delicate flavors.</p>
+                     <p class="price">₹50</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/vL8VqgDJkJs2mXdkVI7sxZvpVzTd5TFWGIxrAtPYfSM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MzM3NzY5OTI2NzAt/YTcyZjRjMjgyMzVl/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4T0h4OFky/OW1abVZsSlRJd2JY/Vm5mR1Z1ZkRCOGZE/QjhmSHd3.jpeg">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Cappuccino Coffee</h4>
+                     <p class="detail-sub">Frothy cappuccino with rich espresso, steamed milk, and foam.</p>
+                     <p class="price">₹250</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/Y75Xf5DdxJ8aNCdr9a86V8tZNCDneWu-ZmbSF7wMNno/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE0/MTk5MDM2NS9waG90/by9tYXNhbGEtY2hh/aS10ZWEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTdKcC01/a0hVZy16ZGxUeTJU/eWdidDZJZGJGSVIx/YlVTZGRsd0o5OUxq/ZnM9">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>masala chai </h4>
+                     <p class="detail-sub">Spiced, aromatic blend of black tea, milk, and Indian spices.</p>
+                     <p class="price">₹69</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+    <!-- next section -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="seafood">
+         <h2 class="main-title">Fast Food</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/i9rWh-_cxXjsE7kr5lyKZqU-Q4gLj-_HkjwLWrDgp0A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zYW1vc2FzLXRh/c3RlLXRyYWRpdGlv/bl8xMTc5MTMwLTQ1/NzgyLmpwZz9zaXpl/PTYyNiZleHQ9anBn">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Aloo Samosa</h4>
+                   <p class="detail-sub">Crispy pastry filled with spiced potatoes and peas.</p>
+                   <p class="price">₹45</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/O12-rZlQTQRPgGVQdBSIOLhG9Zszt3ZkION9MPNPdOI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDkxOTk2/OTAuanBn">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Chole Bhature </h4>
+                    <p class="detail-sub"> Spicy chickpea curry paired with large, fluffy, deep-fried bread.</p>
+                    <p class="price">₹150</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/BQKZqsFVF9idqmYKqGM5b9SHWs7WEg6cgko7qOwIzQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdWJ3/YXktbWVudS5uZXQv/aW1nL3JvdGlzc2Vy/aWUtY2hpY2tlbi5q/cGc">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Subway</h4>
+                    <p class="detail-sub">Customizable sandwiches with fresh ingredients, made-to-order in various styles.</p>
+                    <p class="price">₹159</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/P8GlrGvh9EPjGwX12WRIFwMhn9gfZnsDRR5YESlyqHw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzI0LzQyLzUw/LzM2MF9GXzUyNDQy/NTA1Nl9tdlVNMjNj/N04yaHRTVEpSWDI3/eHM2ZzJXeW0yVzYx/bS5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Malai Chap</h4>
+                     <p class="detail-sub">Tender, spiced meat skewers grilled with a creamy, rich marinade.</p>
+                     <p class="price">₹220</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/1K6fFeAqHa3tGbPhbJCSQYP8HWlrrhMHzUwBuc4LAnM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNzAw/MDM3NC5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Paneer Tikka</h4>
+                     <p class="detail-sub">Marinated, grilled paneer cubes with a smoky, spiced flavor.</p>
+                     <p class="price">₹240</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/Y7L6VI20Q-1jeTBHwMIsm-yg2MbUuox2gAXeeKLhUyY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzUyLzUwLzc2/LzM2MF9GXzM1MjUw/NzYwMF9Oc2p5MXBx/VmNIMUU4Zm5nZG9G/bGhHT0tacHRHbU1N/MC5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Chinees Combo</h4>
+                     <p class="detail-sub">Savory chow mein noodles paired with spicy, tangy chili potatoes.</p>
+                     <p class="price">₹210</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+    <!-- next section -->
+    <div class="main-menus">
+
+    <hr class="divider">
+      <!-- List of food menus -->
+       <div class="main-detail" id="healthy">
+         <h2 class="main-title">Healthy Food</h2>
+         <div class="detail-wrapper">
+           <div class="detail-card">
+             <img class="detail-img" src="https://imgs.search.brave.com/Jzl7LHWeBBf5R8yJXYXpRojSYhdhTMRP64OV3aHKvxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/MTMyMzczNy9waG90/by9hLWJhbmFuYS1z/bW9vdGhpZS1jdXAt/aGVhbHRoeS1zaGFr/ZS1vZi1iYW5hbmEt/d2l0aC1taWxrLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz10/RHdRLWRaak13a0Rn/eEFCNnhyNEw2akhu/and0OW9tWFQtTHlK/TWI2TndVPQ">
+             <div class="detail-desc">
+                <div class="detail-name">
+                   <h4>Banana Shake</h4>
+                   <p class="detail-sub">Creamy blend of ripe bananas, milk, and a touch of sweetness.</p>
+                   <p class="price">₹70</p>
+                 </div>
+                 <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+             </div>
+          </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/AaWtSVDSSmU5yfFuHbmXxIRo7zOXeHQJMz-aepGaUrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE3/OTQ1NDcyNC9waG90/by9ncmlsbGVkLWFu/ZC1yb2FzdC1jaGlj/a2VuLWJyZWFzdC13/aXRoLXNlYXNvbmlu/Zy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9aTYwcnRGRnVt/N18xcU1fUV85dVF0/dWN6ZEhscnFSZGV6/YUxuUWVUcFQ1ND0">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Roast chicken breast </h4>
+                    <p class="detail-sub">Lean, tender cut of chicken, versatile and rich in protein.</p>
+                    <p class="price">₹250</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+              <img class="detail-img" src="https://imgs.search.brave.com/BMscAvHnu-1a49CqOOS15VQP1o5nItX0jJ1p5W7GRe4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hbGxu/dXRyaXRpb3VzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MC8wOC9JTUdfMjAy/MDA3MDJfMTM0OTAx/LTEyMDB4OTAwLmpw/Zw">
+              <div class="detail-desc">
+                 <div class="detail-name">
+                    <h4>Sandwich</h4>
+                    <p class="detail-sub">Fried Egg, Tomato and Avocado Sandwich</p>
+                    <p class="price">₹179</p>
+                  </div>
+                  <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+              </div>
+           </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/w7KYqS2Qqg8YrJy6DehsP4NccLeBoDLYyqFtgLDGg80/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzI4Lzk5LzI4/LzM2MF9GXzMyODk5/Mjg0NF9vd1FGZHhw/MUNmWXRHaDJPOW5l/Y1lsb2RhUXppOHVv/bS5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Mix fruits salad</h4>
+                     <p class="detail-sub"> Refreshing blend of assorted fresh fruits, vibrant and juicy.</p>
+                     <p class="price">₹200</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/r8YI8KxqaJC_ZrNrGkoFdJ5a1NRhKIfWcnyIC0kwTCo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS4zMHNlY29uZHMu/Y29tL3RpcC9sZy9C/bGFjay1CZWFuLUNv/cm4tYW5kLVN3ZWV0/LVBvdGF0by1CdXJn/ZXItQm93bC1UaGlz/LUhlYXJ0eS1ELTYz/MjYxLWFhNjI1Mjk4/MmQtMTY5NjQzMzM3/MC5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Boilled Food</h4>
+                     <p class="detail-sub">Easy Black Bean, Corn & Sweet Potato Ground Beef Burger Bowl </p>
+                     <p class="price">₹150</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+           <div class="detail-card">
+               <img class="detail-img" src="https://imgs.search.brave.com/e9nNzmoHoxojW2n1gj-uV1_KBwq2Iat4Pisyyjsw0Nc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNDQzMTA1/NS83NDM0L2kvNDUw/L2RlcG9zaXRwaG90/b3NfNzQzNDAyMDMt/c3RvY2stcGhvdG8t/c2FsYWQtZm9vZC10/YWtlYXdheS5qcGc">
+               <div class="detail-desc">
+                  <div class="detail-name">
+                     <h4>Mix Salad</h4>
+                     <p class="detail-sub">Crisp salad with mixed greens, cherry tomatoes, cucumbers, and vinaigrette.</p>
+                     <p class="price">₹120</p>
+                   </div>
+                   <img  class="detail-favorites" src="https://cdn-icons-png.flaticon.com/128/5107/5107356.png" height="25px">
+               </div>
+            </div>
+         </div>
+       </div>             
+    </div>
+ </div>
+
+
+  <!-- adding JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+
+
+
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicon.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script  src="app.js">
+    // showing navbar  when click menu on mobile view
+     const mobile = document.querySelector('.menu-toggle');
+     const mobileLink = document.querySelector('.sidebar');
+
+     mobile.addEventListener("click", function(){
+       mobile.classList.toggle("is-active");
+       mobileLink.classList.toggle("active");
+     })
+
+     //close menu when click 
+     mobileLink.addEventListener("click", function(){
+       const menuBars = document.querySelector(".is-active");
+       if(window.innerWidth<=768 && menuBars){
+         mobile.classList.toggle("is-active");
+         mobileLink.classList.toggle("active");
+       }
+     })
+
+     // move the menu to right and left when click back and next
+     var step = 100;
+     var stepFilter = 60;
+     var scrolling = true;
+
+     $(".back").bind("click", function(e){
+       e.preventDefault();
+       $(".highlight-wrapper").animate({
+         scrollLeft:"-="+step + "px"
+       });
+     });
+
+     $(".next").bind("click", function(e){
+       e.preventDefault();
+       $(".highlight-wrapper").animate({
+         scrollLeft:"+="+step + "px"
+       })
+     })
+
+
+     // When click back and next on menu filters
+     $(".back-menus").bind("click",function(e){
+       e.preventDefault();
+       $(".filter-wrapper").animate({
+         scrollLeft:"-=" + stepFilter +"px"
+       })
+     });
+
+     $(".next-menus").bind("click", function(e){
+       e.preventDefault();
+       $(".filter-wrapper").animate({
+         scrollLeft:"+=" + stepFilter +"px"
+       })
+     })
+  
+  
+  
+  
+  
+  
+  
+  // Searching JS
+    function search() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const resultItem = document.getElementById('resultItem');
+        const notAvailable = document.getElementById('notAvailable');
+        const filterCards = document.querySelectorAll('.filter-card');
+        let found = false;
+
+        filterCards.forEach(card => {
+            const cardTitle = card.querySelector('h4').textContent.toLowerCase();
+            if (cardTitle.includes(searchInput)) {
+                card.style.display = 'block';
+                found = true;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (found) {
+            notAvailable.style.display = 'none';
+            resultItem.style.display = 'block';
+            resultItem.textContent = 'Matching items are displayed above.';
+        } else {
+            notAvailable.style.display = 'block';
+            resultItem.style.display = 'none';
+        }
+    }
+
+    document.getElementById('clearBtn').addEventListener('click', function() {
+        document.getElementById('searchInput').value = '';
+        search();
+    });
+  </script>
+</html>
